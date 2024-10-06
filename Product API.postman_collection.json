@@ -12,7 +12,7 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:8000/api/products?price_min=100&price_max=1000&characteristics=color",
+					"raw": "http://localhost:8000/api/products?price_min=100&price_max=1000&characteristics[color]=red&characteristics[size]=L",
 					"protocol": "http",
 					"host": [
 						"localhost"
@@ -32,8 +32,12 @@
 							"value": "1000"
 						},
 						{
-							"key": "characteristics",
-							"value": "color"
+							"key": "characteristics[color]",
+							"value": "red"
+						},
+						{
+							"key": "characteristics[size]",
+							"value": "L"
 						}
 					]
 				}
@@ -76,7 +80,7 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:8000/api/products/:id/reviews",
+					"raw": "http://localhost:8000/api/products/1/reviews",
 					"protocol": "http",
 					"host": [
 						"localhost"
@@ -85,14 +89,8 @@
 					"path": [
 						"api",
 						"products",
-						":id",
+						"1",
 						"reviews"
-					],
-					"variable": [
-						{
-							"key": "id",
-							"value": ""
-						}
 					]
 				}
 			},
