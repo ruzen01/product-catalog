@@ -21,6 +21,9 @@ migrate:
 seed:
 	docker compose exec app php artisan db:seed
 
+composer-install:
+	composer install
+
 lint:
 	./vendor/bin/phpcs --standard=PSR12 app
 
@@ -30,4 +33,4 @@ lint-fix:
 serve:
 	docker compose exec app php artisan serve --host=0.0.0.0 --port=8000
 
-init: build up migrate seed serve
+init: composer-install build up migrate seed serve
