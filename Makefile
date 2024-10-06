@@ -27,4 +27,7 @@ lint:
 lint-fix:
 	./vendor/bin/phpcbf --standard=PSR12 app
 
-init: build up migrate seed
+serve:
+	docker compose exec app php artisan serve --host=0.0.0.0 --port=8000
+
+init: build up migrate seed serve
