@@ -39,12 +39,12 @@
    cp .env.example .env
    ```
    **и добавить значения:**
-   DB_DATABASE=
-   DB_USERNAME=
-   DB_PASSWORD=
-   POSTGRES_DB=
-   POSTGRES_USER=
-   POSTGRES_PASSWORD=
+   DB_DATABASE=  
+   DB_USERNAME=  
+   DB_PASSWORD=  
+   POSTGRES_DB=  
+   POSTGRES_USER=  
+   POSTGRES_PASSWORD=  
 
 3. **Развернуть проект**
    ```bash
