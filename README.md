@@ -38,7 +38,7 @@
    ```bash
    cp .env.example .env
    ```
-   **и добавить значения:**
+   **и добавить значения:**  
    DB_DATABASE=  
    DB_USERNAME=  
    DB_PASSWORD=  
