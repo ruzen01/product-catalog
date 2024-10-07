@@ -34,7 +34,7 @@
    git clone https://github.com/ruzen01/product-catalog
    cd product-catalog
    ```
-2. **Создать файл .env для переменных коружения**
+2. **Создать в корневом каталоге файл .env для переменных окружения**
    ```bash
    cp .env.example .env
    ```
