@@ -34,11 +34,23 @@
    git clone https://github.com/ruzen01/product-catalog
    cd product-catalog
    ```
-2. **Развернуть проект**
+2. **Создать файл .env для переменных коружения**
+   ```bash
+   cp .env.example .env
+   ```
+   **и добавить значения:**
+   DB_DATABASE=
+   DB_USERNAME=
+   DB_PASSWORD=
+   POSTGRES_DB=
+   POSTGRES_USER=
+   POSTGRES_PASSWORD=
+
+3. **Развернуть проект**
    ```bash
    make init
    ```
-3. **Запустить тестирование эндпоинтов**
+4. **Запустить тестирование эндпоинтов**
    ```bash
    newman run Product\ API.postman_collection.json
    ```
